@@ -182,3 +182,87 @@ body {
   color: #9aa4c7;
   font-size: 12px;
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search {
+    width: 100%;
+    display: flex;
+  }
+
+  .search input {
+    flex: 1;
+    width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-cols {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+
+  .page-title {
+    font-size: 22px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .value {
+    text-align: left;
+    word-break: break-word;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tabs button {
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .search {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footer-cols {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .navbar {
+    padding: 14px;
+  }
+}
